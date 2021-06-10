@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.AboutUs">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Image Source="{local:ImageResource App2.images.about.png}"  HorizontalOptions="Fill" Aspect="Fill"  Margin="0,0,0,0"  HeightRequest="410"/>
+            </StackLayout>
+            <StackLayout  Grid.Row="5" Orientation="Horizontal" HorizontalOptions="EndAndExpand" HeightRequest="35" Margin="0,20,10,10">
+                <Button Text="Email"  x:Name="btnemail" TextColor="white" BackgroundColor="#006db8" FontSize="12"  FontAttributes="Bold" CornerRadius="5" Clicked="Btncontact_Clicked"></Button>
+                <!--<Button Text="Register" x:Name="btnRegister" TextColor="white" BackgroundColor="#006db8" Clicked="NavigateButton_OnClicked_register" CornerRadius="5" ></Button>-->
+                <!--<Button Text="Contact Us"  x:Name="btncontact" TextColor="white" FontSize="12" BackgroundColor="#006db8" FontAttributes="Bold"  CornerRadius="5" 
+                        ></Button>-->
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

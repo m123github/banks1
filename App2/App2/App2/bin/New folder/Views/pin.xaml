@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.pin"
+             BackgroundImage="background.png">
+    <ContentPage.Content>
+        <StackLayout Padding="0">
+            <Image   Source="{local:ImageResource App2.images.banklogonew123.png}" Margin="0,0,0,20" Aspect="Fill"  HeightRequest="180"/>
+            <!--<Image   Source="bnk.png" Margin="0,0,0,20" Aspect="Fill"  HeightRequest="180"/>-->
+            <StackLayout Spacing="1" Padding="20" Margin="0,30,0,0">
+                <!-- Place new controls here -->
+                <!-- <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" /> -->
+                <!-- <Image Source="title_icon.png">
+        
+      </Image>-->
+                <StackLayout>
+                    <Label Text="Old PIN" />
+                    <Entry x:Name="pinno" Keyboard="Numeric" IsPassword="True"/>
+                    <Label Text="New PIN" />
+                    <Entry x:Name="pinnum" Keyboard="Numeric" IsPassword="True"/>
+                    <Label Text="Confirm PIN"/>
+                    <Entry x:Name="pinnumber" Keyboard="Numeric" IsPassword="True"/>
+                    <!--<Button Text="Reset" TextColor="white" BackgroundColor="#304ea3" CornerRadius="5" HorizontalOptions="Start" HeightRequest="40" Clicked="cmdResetPIN_Click" Margin="0,20,0,0"></Button>-->
+                    <Grid HeightRequest="40" WidthRequest="120" Margin="0,30,0,0">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Button Text="OK" TextColor="white" BackgroundColor="#304ea3" CornerRadius="5"  Clicked="NavigateButton_OnClicked_ok"></Button>
+                            <Button Text="Cancel" TextColor="white" BackgroundColor="#304ea3" CornerRadius="5" Clicked="NavigateButton_OnClicked_cancel" ></Button>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

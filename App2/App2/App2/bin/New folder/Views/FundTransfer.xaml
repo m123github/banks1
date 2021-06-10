@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             xmlns:lv="clr-namespace:Laavor;assembly=CheckBoxRadio"
+
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+
+             x:Class="App2.FundTransfer"
+
+             BackgroundImage="background.png"
+
+               xmlns:local="clr-namespace:App2">
+
+    <ContentPage.Content>
+        <StackLayout Margin="0,0,0,10">
+            <Frame Margin="0,5,0,10"    BackgroundColor="#f8f7f7" HasShadow="True"  Padding="10">
+                <Label x:Name="bankname" Text="{Binding bankName}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" FontSize="12" TextColor="#E41C28" FontAttributes="Bold" Margin="10,5,10,0"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="10" >
+                <Button Text="Add Beneficiary" Style="{StaticResource buttonStyle}" CornerRadius="5" FontSize="12" Clicked="AddPayee" HeightRequest="40"></Button>
+                <Button Text="Remove Beneficiary" Style="{StaticResource buttonStyle}" CornerRadius="5" FontSize="12"  Clicked="RemovePayee" HeightRequest="40"
+                        ></Button>
+            </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="#b70207" HorizontalOptions="FillAndExpand" Margin="5,10,5,0"></BoxView>
+            <StackLayout Margin="20,5,20,10" >
+                <Label Text="Transfer To" FontSize="12" />
+                <Picker x:Name="ddPayee"  Title="Please select an Account" FontAttributes="None" FontSize="12" Style="{StaticResource profileLabelStyle}" SelectedItem="{Binding ToAccountNumber}">
+                </Picker>
+                <Label Text="Amount" FontSize="12"/>
+                <Entry x:Name="txtAmount" FontSize="12" Keyboard="Numeric" Text="{Binding Amount}"></Entry>
+                <Label Text="Remarks" FontSize="12"/>
+                <Entry x:Name="txtRemarks" Text="{Binding Remarks}" FontSize="12"></Entry>
+                <Label Text="Transfer From" FontSize="12"/>
+                <!--<Label Text="From" />-->
+                <Picker x:Name="ddFromAccount" HorizontalOptions="FillAndExpand" FontSize="12" Title="Please select an Account" FontAttributes="None" Style="{StaticResource profileLabelStyle}" SelectedItem="{Binding FromAccountNumber}">
+                </Picker>
+                <Label Text="Enter Pin" FontSize="12"/>
+                <Entry x:Name="pin12"  FontSize="12" IsPassword="True" Keyboard="Numeric"></Entry>
+                
+                <StackLayout Orientation="Horizontal" Margin="0,20,0,0" HeightRequest="40" HorizontalOptions="CenterAndExpand">
+                    <Button Text="Transfer" FontSize="11" CornerRadius="5" Style="{StaticResource buttonStyle}"  Clicked="ConfirmTransaction"></Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

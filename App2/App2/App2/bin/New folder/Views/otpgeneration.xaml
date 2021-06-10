@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.otpgeneration"
+             BackgroundImage="background.png">
+    <ContentPage.Content>
+        <StackLayout Padding="0">
+            <Image   Source="{local:ImageResource App2.images.banklogonew123.png}" Margin="0,0,0,20" Aspect="Fill"  HeightRequest="210"/>
+
+
+
+
+            <StackLayout Orientation="Horizontal">
+
+                <StackLayout Margin="20,10,10,20">
+                    <Label Text="Enter the OTP"/>
+                    <Entry x:Name="otp" WidthRequest="150" Keyboard="Numeric" IsPassword="True"/>
+
+
+                </StackLayout>
+
+                <Button     Text="Resend OTP" TextColor="white" BackgroundColor="#006db8" CornerRadius="5"  FontSize="Small" HeightRequest="40" VerticalOptions="End" Margin="0,20,10,20" Clicked="Button_Clicked"></Button>
+            </StackLayout>
+
+
+            <Button    Text="Validate OTP" TextColor="white" BackgroundColor="#006db8" CornerRadius="5" Clicked="NavigateButton_OnClicked_otp" HeightRequest="55" Margin="20,20,20,0"></Button>
+
+
+
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

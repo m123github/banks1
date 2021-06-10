@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"   
+              xmlns:local="clr-namespace:App2"
+             xmlns:ctrl="clr-namespace:App2"
+             x:Class="App2.DetailedTransactions"
+             Padding="0,0,0,0"
+             BackgroundImage="background.png">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="MenuItem1" Order="Primary" Icon="home.png"  Priority="0" Clicked ="MenuItem1_Clicked"
+                     />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="WhiteSmoke">
+            <Grid HeightRequest="150">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ListView x:Name="listView"  RowHeight="110"  Grid.Row="0" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame Margin="10,10,10,0" OutlineColor="#8888" HasShadow="true" Padding="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*" />
+                                            <ColumnDefinition Width="5*" />
+                                            <ColumnDefinition Width="3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" HeightRequest="80" Grid.Row="0" Grid.Column="0"  >
+                                            <ctrl:DateControl  VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand" WidthRequest="120" HeightRequest="90"  Date="{Binding Date}" MonthandYear="{Binding Date}" Margin="10,20,0,20"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="0" Grid.Column="1"  Margin="20,20,0,0" >
+                                            <Label Text="{Binding Particulars}" TextColor="Black" FontSize="13" VerticalOptions="Center" Margin="0,10,0,0"></Label>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text = "Balance :" TextColor="#b10207"/>
+                                                <Label Text = "{Binding Balance}" TextColor="#b10207"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="2" HorizontalOptions="EndAndExpand" Margin="0,0,20,0">
+                                            <Label Text = "{Binding Amount}"  FontAttributes="Bold" FontSize="14" TextColor="{Binding LabelColor}" VerticalOptions="Center" />
+                                            <Label Text = "{Binding Type}" FontSize="12" FontAttributes="Bold"  TextColor="{Binding LabelColor}" VerticalOptions="Center"  />
+                                        </StackLayout>
+                                    </Grid>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+    <!--<StackLayout>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <ListView x:Name="listView"  RowHeight="125"  Grid.Row="0" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame Margin="10,10,10,-10" OutlineColor="#8888" HasShadow="true">
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+
+
+                                        <ctrl:DateControl HeightRequest="50" HorizontalOptions="StartAndExpand" WidthRequest="80" Date="{Binding Date}" MonthandYear="{Binding Date}"/>
+                                        <StackLayout HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="160" Padding="6,0,0,0">
+                                            <Label Text="To CSL.1/9918/2018-1" TextColor="Black" FontSize="14"></Label>
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                            <Label Text = "{Binding Amount}" FontSize="22" FontAttributes="Bold" TextColor="Green" VerticalOptions="Center"/>
+                                            --><!--<Label Text = "{Binding Type}" FontSize="12" FontAttributes="Bold" TextColor="Green" VerticalOptions="Center" />--><!--
+                                            <StackLayout Orientation="Horizontal">
+                                            <Label Text = "Balance :" TextColor="#b10207" AbsoluteLayout.LayoutBounds="50, 35, 200, 25"/>
+                                            <Label Text = "8000" TextColor="#b10207"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>-->
+</ContentPage>
+    

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.PassbookView4"
+           xmlns:dxGrid="clr-namespace:DevExpress.Mobile.DataGrid;assembly=DevExpress.Mobile.Grid.v18.2">
+
+    <ContentPage.Content>
+        <StackLayout >
+            <Frame Margin="0,5,0,10"    BackgroundColor="#f8f7f7" HasShadow="True"  Padding="10" >
+                <Label x:Name="bankname" Text="{Binding bankName}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" FontSize="12" TextColor="#E41C28" FontAttributes="Bold" Margin="10,5,10,0"/>
+            </Frame>
+
+
+
+            <StackLayout Orientation="Horizontal" Margin="30,0,0,10" >
+                <!--<Label Text="Transfer To" />-->
+
+
+                <Label Text="Account No:" />
+
+                <Picker x:Name="ActPicker"  Title="Please select an Account" FontAttributes="None" FontSize="12" Margin="10,-15,0,0" SelectedIndexChanged="ActPicker_SelectedIndexChanged" >
+                </Picker>
+         
+            
+            
+            </StackLayout>
+
+
+
+            <dxGrid:GridControl x:Name="gridView1" ColumnsAutoWidth="True" RowSpacing="50" >
+            </dxGrid:GridControl>
+ 
+
+
+
+
+
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

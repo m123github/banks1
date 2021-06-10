@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.Registration"
+             BackgroundImage="background.png">
+        <ContentPage.Content>
+            <StackLayout Padding="0">
+
+            <Image   Source="{local:ImageResource App2.images.banklogonew123.png}" Margin="0,0,0,20" Aspect="Fill"  HeightRequest="200"/>
+                <!--<Image   Source="bnk.png" Margin="0,0,0,20" Aspect="Fill"  HeightRequest="180"/>-->
+
+                <StackLayout   Margin="53,20,53,0">
+
+
+
+
+                    <StackLayout>
+                            <Label Text="Bank ID" x:Name="lbl" />
+                            <Entry x:Name="BankId"   WidthRequest="137" Keyboard="Numeric" />
+                        </StackLayout>
+
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" Spacing="3">
+                            <Label Text="Branch /"  />
+                            <Label Text="Customer ID" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Spacing="0">
+                            <Entry x:Name="BranchId" WidthRequest="80" Keyboard="Numeric" IsEnabled="True" MaxLength="4"/>
+                            <Entry x:Name="CustId" WidthRequest="170" Keyboard="Numeric" MaxLength="10" />
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Label Text="PIN"/>
+                        <Entry x:Name="pin" Keyboard="Numeric" IsPassword="True" WidthRequest="247"/>
+                    </StackLayout>
+
+
+
+                    <Grid HeightRequest="40" WidthRequest="200" HorizontalOptions="Center" Margin="0,20,0,0">
+                        <Button Text="Generate OTP" TextColor="white" BackgroundColor="#006db8" CornerRadius="5" Clicked="NavigateButton_OnClicked_reg"></Button>
+                    </Grid>
+                </StackLayout>
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>

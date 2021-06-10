@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 x:Class="App2.AccountDetail"
+                Title ="Additional Information" >
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation 
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8"
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"/>
+
+    </pages:PopupPage.Animation>
+    <ContentPage.Content>
+        <Frame   HasShadow="True" CornerRadius="5"     BackgroundColor="#b3daff"   VerticalOptions="Center" HorizontalOptions="Center" Opacity ="100"  WidthRequest="250">
+
+            <!--<Image Source="{local:ImageResource App2.images.icon1.jpg}"    Margin="0,0,0,0" HeightRequest="30"/>-->
+            <StackLayout   >
+                <Label  x:Name="lbl" HorizontalOptions="CenterAndExpand" FontSize="12" FontFamily="Calibri" TextColor="Black" />
+
+
+            </StackLayout>
+
+        </Frame>
+
+
+    </ContentPage.Content>
+</pages:PopupPage>

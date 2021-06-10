@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:App2"
+              x:Class="App2.AccountTypes1"
+             BackgroundImage="background.png">
+    <ContentPage.Content>
+        <StackLayout >
+        <!--<Label x:Name="bankname" Text="Malayalapuzha Service Co-operative Bank" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" FontSize="16" TextColor="#000000" Margin="10,15,10,15"/>-->
+            <Frame Margin="0,5,0,10"    BackgroundColor="#f8f7f7" HasShadow="True"  Padding="0"  >
+                <Label x:Name="bankname" Text="{Binding bankName}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" FontSize="12" TextColor="#E41C28" FontAttributes="Bold" Margin="10,5,10,0"/>
+            </Frame>
+            <!--<ScrollView BackgroundColor="WhiteSmoke">-->
+
+
+                <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout Margin="10,10,10,10">
+                    <ListView x:Name="listView12" 
+			 VerticalOptions="FillAndExpand"
+			   HasUnevenRows="True"  ItemSelected="listView12_ItemSelected" >
+                        
+                        <ListView.ItemTemplate >
+                            <DataTemplate>
+                                <ViewCell >
+                                    <Frame Margin="10,0,10,10" OutlineColor="#8888"   BorderColor="#F2F3F4" HasShadow="True" Padding="0"   >
+
+
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="onFrameTapped" NumberOfTapsRequired="1" CommandParameter="{Binding Text, Source={x:Reference actnoLabel}}" />
+                                        </Frame.GestureRecognizers>
+
+
+                                        <Grid VerticalOptions="FillAndExpand">
+                                            <Grid.RowDefinitions>
+
+                                                <RowDefinition Height="30" />
+                                                <RowDefinition Height="Auto"/>
+
+                                            </Grid.RowDefinitions>
+
+                                            <Grid.ColumnDefinitions>
+
+                                                <ColumnDefinition Width="2.5*" />
+                                                <ColumnDefinition Width="6.5*" />
+                                                <ColumnDefinition Width="1*" />
+                                              
+
+
+                                            </Grid.ColumnDefinitions>
+                                          
+                                            
+                                                <Label x:Name="des" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" Text="{Binding TYPE_DESCR}" HorizontalOptions="StartAndExpand" VerticalOptions="Start" TextColor="#0d28ce"  FontSize="Small" Margin="10,2,0,0" ></Label>
+                                            
+                                                
+
+                                                <Image  Grid.Row="1" Grid.Column="0" x:Name="img" Source="{Binding ImgSrc,Converter={local:ImageConverter}}" VerticalOptions="StartAndExpand"   HorizontalOptions="StartAndExpand" WidthRequest="50"  Margin="5,0,0,0"></Image>
+                                               
+                                            <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="1" Margin="0,-10,0,5" HorizontalOptions="StartAndExpand">
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                                <Label Text = "A/C No :" TextColor="Red" FontSize="12"  HorizontalTextAlignment="Start" Margin="-5,0,-5,0"/>
+                                                <Label  x:Name="actnoLabel" Text = "{Binding AC_NUMBER}" HorizontalOptions="StartAndExpand"  TextColor="Black" FontSize="12" Margin="10,0,0,0"/>
+                                            </StackLayout>
+                                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                                    <Label FontFamily="" Text = "Balance :" HorizontalOptions="Start" TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,5,0"/>
+                                            <Label Text = "{Binding BALANCE}"  TextColor="Black" FontSize="12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                                    <Label Text = "Transaction :" WidthRequest="80"  TextColor="Black" FontSize="12"   Margin="-5,0,5,0"/>
+                                                    <Label Text = "{Binding NO_TRANS}"  TextColor="Black" FontSize="12" Margin="-15,0,0,0" />
+                                                </StackLayout>
+                                                
+                                            </StackLayout>
+                                                <Image Grid.Row="1" Grid.Column="2" Source="{local:ImageResource App2.images.arrow_blue_right.png}" VerticalOptions="Center"  WidthRequest="30" HeightRequest="30">
+                                                    <Image.GestureRecognizers>
+                                                        <TapGestureRecognizer 
+                                                        Tapped="TapGestureRecognizer_Tapped" CommandParameter="{Binding Text, Source={x:Reference actnoLabel}}" ></TapGestureRecognizer>
+                                                    </Image.GestureRecognizers>
+                                                </Image>
+                                                                                           
+                                        </Grid>
+
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Grid>
+        <!--</ScrollView>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

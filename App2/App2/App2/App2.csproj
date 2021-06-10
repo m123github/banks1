@@ -1,0 +1,320 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <Win32Resource />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\AccountTypes.xaml.cs" />
+    <Compile Remove="Views\PassbookView4.xaml.cs" />
+    <Compile Remove="Views\PassbookView5.xaml.cs" />
+    <Compile Remove="Views\Registration1.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\AccountTypes.xaml" />
+    <EmbeddedResource Remove="Views\PassbookView4.xaml" />
+    <EmbeddedResource Remove="Views\PassbookView5.xaml" />
+    <EmbeddedResource Remove="Views\Registration1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Components\Image\bank.png" />
+    <None Remove="Components\Image\banknew.png" />
+    <None Remove="Components\Image\bank_image.png" />
+    <None Remove="images\about.png" />
+    <None Remove="images\adress.png" />
+    <None Remove="images\arrow_blue_right.png" />
+    <None Remove="images\atm.png" />
+    <None Remove="images\atm_disabled.png" />
+    <None Remove="images\background.png" />
+    <None Remove="images\bank1.PNG" />
+    <None Remove="images\bankaccnt.png" />
+    <None Remove="images\banklogonew123.png" />
+    <None Remove="images\banklogonew1234.png" />
+    <None Remove="images\banknew123.png" />
+    <None Remove="images\billpay.png" />
+    <None Remove="images\billpayement.png" />
+    <None Remove="images\billpayement1.png" />
+    <None Remove="images\billpayement2.png" />
+    <None Remove="images\billpayement_disabled.png" />
+    <None Remove="images\bnk.PNG" />
+    <None Remove="images\bnkaccnt.PNG" />
+    <None Remove="images\bnknew.PNG" />
+    <None Remove="images\CSOL.png" />
+    <None Remove="images\dashboardnew.png" />
+    <None Remove="images\deposit_loan.png" />
+    <None Remove="images\email.png" />
+    <None Remove="images\fixedpst.png" />
+    <None Remove="images\fundtransfer.png" />
+    <None Remove="images\fundtransfer_disabled.png" />
+    <None Remove="images\GoldLoan.png" />
+    <None Remove="images\Logout.png" />
+    <None Remove="images\myaccnt.png" />
+    <None Remove="images\myaccounts.png" />
+    <None Remove="images\new.PNG" />
+    <None Remove="images\Passbook.apk" />
+    <None Remove="images\passbook.png" />
+    <None Remove="images\passbook_disabled.png" />
+    <None Remove="images\phone.png" />
+    <None Remove="images\premium.png" />
+    <None Remove="images\recenttransaction.png" />
+    <None Remove="images\RecentTransactions.png" />
+    <None Remove="images\RecentTransactions_disabled.png" />
+    <None Remove="images\Secretariat.png" />
+    <None Remove="images\share.png" />
+    <None Remove="images\title_icon.png" />
+    <None Remove="images\title_icon_old.png" />
+    <None Remove="images\transactions.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Components\Image\bank.png" />
+    <EmbeddedResource Include="Components\Image\banknew.png" />
+    <EmbeddedResource Include="Components\Image\bank_image.png" />
+    <EmbeddedResource Include="images\about.png" />
+    <EmbeddedResource Include="images\adress.png" />
+    <EmbeddedResource Include="images\arrow_blue_right.png" />
+    <EmbeddedResource Include="images\atm.png" />
+    <EmbeddedResource Include="images\atm_disabled.png" />
+    <EmbeddedResource Include="images\background.png" />
+    <EmbeddedResource Include="images\bank1.PNG" />
+    <EmbeddedResource Include="images\banklogonew123.png" />
+    <EmbeddedResource Include="images\banklogonew1234.png" />
+    <EmbeddedResource Include="images\banknew123.png" />
+    <EmbeddedResource Include="images\billpay.png" />
+    <EmbeddedResource Include="images\billpayement.png" />
+    <EmbeddedResource Include="images\billpayement1.png" />
+    <EmbeddedResource Include="images\billpayement2.png" />
+    <EmbeddedResource Include="images\billpayement_disabled.png" />
+    <EmbeddedResource Include="images\bnk.PNG" />
+    <EmbeddedResource Include="images\bnkaccnt.PNG" />
+    <EmbeddedResource Include="images\bnknew.PNG" />
+    <EmbeddedResource Include="images\CSOL.png" />
+    <EmbeddedResource Include="images\dashboardnew.png" />
+    <EmbeddedResource Include="images\deposit_loan.png" />
+    <EmbeddedResource Include="images\email.png" />
+    <EmbeddedResource Include="images\fixedpst.png" />
+    <EmbeddedResource Include="images\fundtransfer.png" />
+    <EmbeddedResource Include="images\fundtransfer_disabled.png" />
+    <EmbeddedResource Include="images\GoldLoan.png" />
+    <EmbeddedResource Include="images\Logout.png" />
+    <EmbeddedResource Include="images\myaccnt.png" />
+    <EmbeddedResource Include="images\myaccounts.png" />
+    <EmbeddedResource Include="images\new.PNG" />
+    <EmbeddedResource Include="images\passbook.png" />
+    <EmbeddedResource Include="images\passbook_disabled.png" />
+    <EmbeddedResource Include="images\phone.png" />
+    <EmbeddedResource Include="images\premium.png" />
+    <EmbeddedResource Include="images\recenttransaction.png" />
+    <EmbeddedResource Include="images\RecentTransactions.png" />
+    <EmbeddedResource Include="images\RecentTransactions_disabled.png" />
+    <EmbeddedResource Include="images\Secretariat.png" />
+    <EmbeddedResource Include="images\share.png" />
+    <EmbeddedResource Include="images\title_icon.png" />
+    <EmbeddedResource Include="images\title_icon_old.png" />
+    <EmbeddedResource Include="images\transactions.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="App2.shproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.4" />
+    <PackageReference Include="LiveXAML" Version="2.1.70" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="PCLStorage" Version="1.0.2" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="1.1.5.188" />
+    <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="17.1.0.38" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
+    <PackageReference Include="Xamarin.Forms.Plugin.HorizontalList" Version="1.0.2" />
+    <PackageReference Include="ZumeroDataGrid" Version="1.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ViewModels\MainPageMenuItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views-Banks\AccountTypes1.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views-Banks\Dashboard.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AccountTypes1.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DateControl.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MainPage.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MainPageDetail.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MasterPage.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views-Banks\AccountTypes1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views-Banks\Dashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DetailedTransaction1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DetailedTransaction.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PassbookView2 .xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PassbookView2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PassbookView2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Registration.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AboutUs.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AccountDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\EmailUs.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PinVerification.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\UserProfile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Dashboard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RemovePayee.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AddPayee.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AccountTypes1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\BankIdLogin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\FundTransfer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\otpgeneration.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\pin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Page123.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="PassbookView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="PassbookView1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\AccountTypes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\AccountTypes1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\AddPayee.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\BankIdLogin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Dashboard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\DateControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\DetailedTransaction.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\DetailedTransaction1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\FundTransfer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\MainPageDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\MasterPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\otpgeneration.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\PassbookView2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\PassbookView3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\pin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Registration.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\RemovePayee.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\TransferConfirmation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>

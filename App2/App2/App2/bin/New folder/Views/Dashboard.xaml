@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.Dashboard"
+             BackgroundImage="background.png">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="MenuItem1" Order="Primary" Icon="Logout.png"  Priority="0"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Margin="0,0,0,0" >
+            <!--<Image Source="{local:ImageResource App2.images.dashboardnew.png}"  HorizontalOptions="Fill" Aspect="Fill"  Margin="0,0,0,0" HeightRequest="300"/>-->
+            <Frame Margin="0,0,0,10"    BackgroundColor="#f8f7f7" HasShadow="True"  Padding="10">
+                <Label x:Name="bankname" Text="{Binding bankName}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" FontSize="12" TextColor="#E41C28" FontAttributes="Bold" Margin="10,5,10,0"/>
+            </Frame>
+            <!-- Place new controls here -->
+            <!--<Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  >-->
+            <Frame Margin="30,5,30,10" HeightRequest="200"   BackgroundColor="White" HasShadow="True"  Padding="10" OutlineColor="LightBlue" CornerRadius="10" >
+                <ScrollView Orientation="Vertical">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <!--<RowDefinition Height="*"></RowDefinition>-->
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="8" />
+                        </Grid.ColumnDefinitions>
+                        <!--<StackLayout Margin="50,0,50,0"  Orientation="Horizontal">-->
+                        <StackLayout Orientation="Horizontal">
+
+                            <StackLayout>
+                                <Image  Grid.Row="0" Grid.Column="0" x:Name="img" Source="{local:ImageResource App2.images.adress.png}"  HorizontalOptions="EndAndExpand" WidthRequest="25"  Margin="0,10,5,0"></Image>
+                            </StackLayout>
+                            <StackLayout  Grid.Row="0" Grid.Column="1" HorizontalOptions="StartAndExpand" Orientation="Vertical">
+                                <Label   Text="ADDRESS"  FontSize="14" WidthRequest="150" HorizontalOptions="StartAndExpand" FontAttributes="Bold" TextColor="#0066cc" Margin="0,10,0,0"  />
+                               
+                                    
+                                    <Label Text="{Binding info.NAME}"  FontSize="14" WidthRequest="150"  TextColor="#787878" />
+                               
+                                
+                                    
+                                    <Label Text="{Binding info.HOUSE}"  FontSize="14" WidthRequest="150"  TextColor="#787878" />
+                               
+                                
+                                    
+                                    <Label Text="{Binding info.STREET}"  FontSize="14" WidthRequest="150"  TextColor="#787878"/>
+                                
+                               
+                                    
+                                    <Label Text="{Binding info.CITY}"  FontSize="14" WidthRequest="150"  TextColor="#787878"/>
+                                
+                            </StackLayout>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" Grid.Row="1" BackgroundColor="#a9a8a8" HorizontalOptions="FillAndExpand" Margin="5,10,0,0" ></BoxView>
+                        <StackLayout Orientation="Horizontal" Grid.Row="2" >
+                            <StackLayout>
+                                <Image  Grid.Row="2" Grid.Column="0"  Source="{local:ImageResource App2.images.email.png}"  HorizontalOptions="StartAndExpand" WidthRequest="25"  Margin="5,10,5,0"></Image>
+                            </StackLayout>
+                            <StackLayout  Grid.Row="2" Grid.Column="1" HorizontalOptions="StartAndExpand" Orientation="Vertical">
+                                <Label Text="email"  FontSize="14" WidthRequest="150" FontAttributes="Bold" TextColor="#0066cc"/>
+                                <Label Text="{Binding info.EMAIL}"  FontSize="14" WidthRequest="150"  TextColor="#787878"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" Grid.Row="3" BackgroundColor="#a9a8a8" HorizontalOptions="FillAndExpand" Margin="5,10,5,0"></BoxView>
+                        <StackLayout Orientation="Horizontal" Grid.Row="4" >
+                            <StackLayout>
+                                <Image  Grid.Row="4" Grid.Column="0"  Source="{local:ImageResource App2.images.phone.png}"  HorizontalOptions="StartAndExpand" WidthRequest="25"  Margin="5,0,5,0"></Image>
+                            </StackLayout>
+                            <StackLayout  Grid.Row="4" Grid.Column="1" HorizontalOptions="StartAndExpand" Orientation="Vertical" >
+                                <Label Text="MOBILE"  FontSize="14" WidthRequest="150"  FontAttributes="Bold" TextColor="#0066cc"/>
+                                <Label Text="{Binding info.PHONE}"  FontSize="14" WidthRequest="150"  TextColor="#787878"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout  Grid.Row="5" Orientation="Horizontal" HorizontalOptions="EndAndExpand" HeightRequest="35" Margin="0,20,0,10">
+                            <Button Text="Change PIN"  x:Name="btnpinchange" TextColor="white" Clicked="btnpinchange_Clicked"  BackgroundColor="#006db8" FontSize="10"  FontAttributes="Bold" CornerRadius="5"></Button>
+                            <!--<Button Text="Register" x:Name="btnRegister" TextColor="white" BackgroundColor="#006db8" Clicked="NavigateButton_OnClicked_register" CornerRadius="5" ></Button>-->
+                            <Button Text="About Us"  x:Name="btnabtus" TextColor="white" FontSize="10" BackgroundColor="#006db8" FontAttributes="Bold"  CornerRadius="5" Clicked="NavigateButton_AboutUS"></Button>
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>
+            </Frame>
+            
+            <Grid HorizontalOptions="FillAndExpand" Margin="0,20,0,0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="70" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="1" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="1" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="Center">
+                    <StackLayout  Grid.Row="0" Grid.Column="0" Orientation="Horizontal"  HeightRequest="68" HorizontalOptions="Center">
+                        <Image x:Name="myacc"  WidthRequest="72">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped" CommandParameter="MyAccount"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="My Account"   TextColor="Black" FontSize="12"></Label>
+                    </StackLayout>
+                </StackLayout>
+                <BoxView WidthRequest="1"  BackgroundColor="Gray" Grid.Column="1" Grid.Row="0" VerticalOptions="CenterAndExpand" HeightRequest="80"></BoxView>
+                <BoxView WidthRequest="1"  BackgroundColor="Gray" Grid.Column="3" Grid.Row="0" VerticalOptions="CenterAndExpand" HeightRequest="80"></BoxView>
+                <BoxView WidthRequest="1"  BackgroundColor="Gray" Grid.Column="1" Grid.Row="2" VerticalOptions="CenterAndExpand" HeightRequest="80"></BoxView>
+                <BoxView WidthRequest="1"  BackgroundColor="Gray" Grid.Column="3" Grid.Row="2" VerticalOptions="CenterAndExpand" HeightRequest="80"></BoxView>
+                <!--<Image Source="myaccnt.png"   Grid.Row="0" Grid.Column="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped" CommandParameter="MyAccount"/>
+                    </Image.GestureRecognizers>
+                </Image>-->
+                <StackLayout Grid.Row="2" Grid.Column="4" VerticalOptions="Center">
+                    <StackLayout  Grid.Row="0" Grid.Column="2" Orientation="Horizontal"  HeightRequest="68" HorizontalOptions="Center">
+                        <Image x:Name="trans"  WidthRequest="72">
+                            <!--Source="{local:ImageResource App12.images.RecentTransactions.png}"-->
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped" CommandParameter="OtherServices" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                        <Label x:Name="Recent" Text="Other Services" TextColor="Black" FontSize="12"></Label>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="2" VerticalOptions="Center">
+                    <StackLayout   Grid.Row="0" Grid.Column="4" Orientation="Horizontal"  HeightRequest="68" HorizontalOptions="Center">
+                        <Image x:Name="pass"  WidthRequest="72">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped"  CommandParameter="Passbook"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="Passbook" TextColor="Black" FontSize="12"></Label>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="Center">
+                    <StackLayout   Grid.Row="2" Grid.Column="0" Orientation="Horizontal"  HeightRequest="68" HorizontalOptions="Center">
+                        <Image x:Name="atm"  WidthRequest="72">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped" CommandParameter="ATM"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="ATM" TextColor="Black" FontSize="12"></Label>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="4" VerticalOptions="Center">
+                    <StackLayout   Grid.Row="2" Grid.Column="2" Orientation="Horizontal"  HeightRequest="68" HorizontalOptions="Center">
+                        <Image x:Name="fundtrans"  WidthRequest="72">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped" CommandParameter="Fundtransfer"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="Fund Transfer" TextColor="Black" FontSize="12"></Label>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="2" VerticalOptions="Center">
+                    <StackLayout  Grid.Row="2" Grid.Column="4" Orientation="Horizontal"  HeightRequest="68" HorizontalOptions="Center">
+                        <Image x:Name="bill"  WidthRequest="72">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped" CommandParameter="Billpayment"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="Bill Payment" TextColor="Black" FontSize="12"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

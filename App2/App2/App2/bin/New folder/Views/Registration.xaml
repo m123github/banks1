@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.Registration"
+             BackgroundImage="background.png">
+    <ContentPage.Content>
+        <StackLayout Padding="0">
+
+            <Image   Source="{local:ImageResource App2.images.banklogonew123.png}" Margin="0,0,0,20" Aspect="Fill"  HeightRequest="210"/>
+            <!--<Image   Source="bnk.png" Margin="0,0,0,20" Aspect="Fill"  HeightRequest="180"/>-->
+
+            <StackLayout Spacing="1" Padding="20" Margin="0,30,0,0">
+                <!-- Place new controls here -->
+                <!-- <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" /> -->
+
+                <!-- <Image Source="title_icon.png">
+        
+      </Image>-->
+
+
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout>
+                            <Label Text="Bank ID" x:Name="lbl" />
+                            <Entry x:Name="BankId" WidthRequest="100" Keyboard="Numeric" MaxLength="3"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Branch ID"  />
+                            <Entry x:Name="BranchID" WidthRequest="100" MaxLength="4" Keyboard="Numeric"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Customer ID" />
+                            <Entry x:Name="CustId" WidthRequest="120" Keyboard="Numeric"/>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                    <Label Text="PIN"/>
+                    <Entry x:Name="pin" Keyboard="Numeric" IsPassword="True"/>
+                    <Grid HeightRequest="40" WidthRequest="200" HorizontalOptions="Center" Margin="0,30,0,0">
+                        <Button Text="Generate OTP" TextColor="white" BackgroundColor="#006db8" CornerRadius="5" Clicked="NavigateButton_OnClicked_reg"></Button>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

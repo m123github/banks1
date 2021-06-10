@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.DateControl">
+    <ContentView.Content>
+        <Frame CornerRadius="5"
+      
+      Padding="0" BackgroundColor="#b70207" VerticalOptions="FillAndExpand">
+
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+                <Label x:Name="lblDate"  Grid.Row="0" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Frame CornerRadius="0"
+      Padding="0"
+       BackgroundColor="#f0f0f0" Grid.Row="1"  HorizontalOptions="FillAndExpand">
+                    <Label x:Name="lblMonthYear"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" ></Label>
+                </Frame>
+            </Grid>
+
+        </Frame>
+    </ContentView.Content>
+</ContentView>

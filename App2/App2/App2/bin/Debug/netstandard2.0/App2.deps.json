@@ -1,0 +1,444 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "622a1454488d0e5aa7578d8930458d3e77b6cb45"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "App2/1.0.0": {
+        "dependencies": {
+          "Acr.UserDialogs": "7.0.4",
+          "LiveXAML": "2.1.70",
+          "Microsoft.AspNet.WebApi.Client": "5.2.7",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.1",
+          "PCLStorage": "1.0.2",
+          "Rg.Plugins.Popup": "1.1.5.188",
+          "SQLiteNetExtensions": "2.1.0",
+          "Syncfusion.Xamarin.SfDataGrid": "17.1.0.38",
+          "Xamarin.Forms": "3.6.0.264807",
+          "Xamarin.Forms.Plugin.HorizontalList": "1.0.2",
+          "ZumeroDataGrid": "1.1.3"
+        },
+        "runtime": {
+          "App2.dll": {}
+        }
+      },
+      "Acr.UserDialogs/7.0.4": {
+        "runtime": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "LiveXAML/2.1.70": {},
+      "Microsoft.AspNet.WebApi.Client/5.2.7": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json.Bson": "1.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {
+            "assemblyVersion": "5.2.7.0",
+            "fileVersion": "5.2.61128.0"
+          }
+        }
+      },
+      "Microsoft.Bcl/1.1.6": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.10"
+        }
+      },
+      "Microsoft.Bcl.Async/1.0.165": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.6"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Threading.Tasks.Extensions.dll": {
+            "assemblyVersion": "1.0.12.0",
+            "fileVersion": "1.0.165.0"
+          },
+          "lib/net45/Microsoft.Threading.Tasks.dll": {
+            "assemblyVersion": "1.0.12.0",
+            "fileVersion": "1.0.165.0"
+          }
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.10": {},
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.1.20722"
+          }
+        }
+      },
+      "PCLStorage/1.0.2": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.6",
+          "Microsoft.Bcl.Async": "1.0.165"
+        },
+        "runtime": {
+          "lib/net45/PCLStorage.Abstractions.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          },
+          "lib/net45/PCLStorage.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
+      "Rg.Plugins.Popup/1.1.5.188": {
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {
+            "assemblyVersion": "1.1.5.188",
+            "fileVersion": "1.1.5.188"
+          }
+        }
+      },
+      "sqlite-net-pcl/1.4.118": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "SQLitePCLRaw.bundle_green": "1.1.5"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.5": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "SQLitePCLRaw.core": "1.1.5"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.core/1.1.5": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/17.1.0.38": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "17.1.0.38",
+            "fileVersion": "17.1.0.38"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.1.0.38": {
+        "dependencies": {
+          "Syncfusion.Licensing": "17.1.0.38"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Syncfusion.Core.XForms.dll": {
+            "assemblyVersion": "17.1451.0.38",
+            "fileVersion": "17.1451.0.38"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.GridCommon/17.1.0.38": {
+        "runtime": {
+          "lib/netstandard1.0/Syncfusion.GridCommon.Portable.dll": {
+            "assemblyVersion": "17.1451.0.38",
+            "fileVersion": "17.1451.0.38"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfDataGrid/17.1.0.38": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.38",
+          "Syncfusion.Xamarin.GridCommon": "17.1.0.38",
+          "Syncfusion.Xamarin.SfNumericTextBox": "17.1.0.38",
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Syncfusion.Data.Portable.dll": {
+            "assemblyVersion": "17.1451.0.38",
+            "fileVersion": "17.1451.0.38"
+          },
+          "lib/netstandard1.0/Syncfusion.SfDataGrid.XForms.dll": {
+            "assemblyVersion": "17.1451.0.38",
+            "fileVersion": "17.1451.0.38"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfNumericTextBox/17.1.0.38": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.38",
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Syncfusion.SfNumericTextBox.XForms.dll": {
+            "assemblyVersion": "17.1451.0.38",
+            "fileVersion": "17.1451.0.38"
+          }
+        }
+      },
+      "Xamarin.Forms/3.6.0.264807": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms.Plugin.HorizontalList/1.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/HorizontalList.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ZumeroDataGrid/1.1.3": {
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Zumero.DataGrid.dll": {
+            "assemblyVersion": "1.0.5828.18230",
+            "fileVersion": "1.0.5828.18230"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "App2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Acr.UserDialogs/7.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wmeQhteQymYgTwDPSxfuLlWP8qkXKSCcMB0UNQi/SXl4/vvqwzsX3uP5A7kYzxsbthuFWau3Ni0ZyCL7pyb5Fw==",
+      "path": "acr.userdialogs/7.0.4",
+      "hashPath": "acr.userdialogs.7.0.4.nupkg.sha512"
+    },
+    "LiveXAML/2.1.70": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-skUl69q01DSsK+8xZP6eotLuOSFZmHVut36HJ+iA/Fo1RkaGc8thaNlGFiky7wRhiGfG0u1z7UqdxYKxGF/mtQ==",
+      "path": "livexaml/2.1.70",
+      "hashPath": "livexaml.2.1.70.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S8hfceUny5C0+yf3B1q6Ey3fysbH4cowYacnI7t1LIX53pFUplNLwxZgmNK2GkNw/hE68Q3Ay+3NiS0eVyR3Sg==",
+      "path": "microsoft.aspnet.webapi.client/5.2.7",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512"
+    },
+    "Microsoft.Bcl/1.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2RB+44L1oELRo8zgFjFDhssDR8FIpOi3iD8kgxLBog7EJ+PMUpS17AGZ34JOPYHwl4i4weSgelQ/yltZ+Y5yVA==",
+      "path": "microsoft.bcl/1.1.6",
+      "hashPath": "microsoft.bcl.1.1.6.nupkg.sha512"
+    },
+    "Microsoft.Bcl.Async/1.0.165": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/7B77Vxe7LB3u6nLA2lvyN7QQfFWwq+FivTEWQ/zh9dEq/Vyq66cshNxnGv1FI+eyxa2znsGexrDSpvqVdJpAw==",
+      "path": "microsoft.bcl.async/1.0.165",
+      "hashPath": "microsoft.bcl.async.1.0.165.nupkg.sha512"
+    },
+    "Microsoft.Bcl.Build/1.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UdtAwAoXLgiL9AsaXmZ7Mxcnl5xDjuK64aMR7+/9SAbUpbWRbg9bPAKtHJRGBeGFA9ehF4mW8WKQ6DCqSbEKPw==",
+      "path": "microsoft.bcl.build/1.0.10",
+      "hashPath": "microsoft.bcl.build.1.0.10.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json.Bson/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W5Ke5xei9yS0ljQZuT75VgSp5M43eCPm5hHAelvKyGGU4dV7hYCmtwdsxoADb/exO6pYHeu/Iki43TdYPzfESQ==",
+      "path": "newtonsoft.json.bson/1.0.1",
+      "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "PCLStorage/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gj37kg2DqlKADjnoax9wqSLSo9ZeEBRTEqfXg3R+fm2sbgst2B0Xa6TX1sh2ORrj83vk8lzyZ/DGEQx7c2QKPg==",
+      "path": "pclstorage/1.0.2",
+      "hashPath": "pclstorage.1.0.2.nupkg.sha512"
+    },
+    "Rg.Plugins.Popup/1.1.5.188": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3z5Q6Bdvhi8J2e5Cj0lEQ3rseZXXYTCFd3FjWjDlRbBnJ2vtNPRui5DE8bwWjA2PiDyK+GNj/bhvy+enEzISBA==",
+      "path": "rg.plugins.popup/1.1.5.188",
+      "hashPath": "rg.plugins.popup.1.1.5.188.nupkg.sha512"
+    },
+    "sqlite-net-pcl/1.4.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S5yWVFDWV4hq2ldntae/Iq+Oe9LMjX53XnhXrpNbxphQy4lSUMbNgAjrOZ64AO81cHC6VK/nJlGOJUNQYHO+hw==",
+      "path": "sqlite-net-pcl/1.4.118",
+      "hashPath": "sqlite-net-pcl.1.4.118.nupkg.sha512"
+    },
+    "SQLiteNetExtensions/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X1ufKPcyQM7ExzdmdunHHSv+R3Pi7xeT9OG1wrPo6K2IR2Ku+VuEClQ1YlbxwfaKM4+NR4Ut2g0gHbJ5dllleA==",
+      "path": "sqlitenetextensions/2.1.0",
+      "hashPath": "sqlitenetextensions.2.1.0.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_green/1.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1iFD+xBp+F4bGNX2qHqWw5khFmK6jW8U+Fo/cQYfOMssVSi2ZZEwg0CCxRr9AGPDsRnh9ZWFM/hp9K35gcc4WA==",
+      "path": "sqlitepclraw.bundle_green/1.1.5",
+      "hashPath": "sqlitepclraw.bundle_green.1.1.5.nupkg.sha512"
+    },
+    "SQLitePCLRaw.core/1.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f5PoVZnZ1Y3wddUxW4Y/VVysT7H5PmoeznUVi7FC5EYq3GDV9qQVkY9PUcLYPkXF2fEa3qZjKiIsg/Oruf3dzQ==",
+      "path": "sqlitepclraw.core/1.1.5",
+      "hashPath": "sqlitepclraw.core.1.1.5.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/17.1.0.38": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QReB2C8lTQDutmfzyuImqZwkUYXuLul4+KoBT0Oqg8bun3KXm3CGX7Efeusd0avshH4FL16sCmfzgiJi3OCD3w==",
+      "path": "syncfusion.licensing/17.1.0.38",
+      "hashPath": "syncfusion.licensing.17.1.0.38.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Core/17.1.0.38": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F0qkvikeJZWZfyfjbsIJ6dv+hJexXWX+hEtyQeBT/tczZJvUOHvwzqjVGGda6qJSRoSkSeMLjs1z8gTh/B0w9w==",
+      "path": "syncfusion.xamarin.core/17.1.0.38",
+      "hashPath": "syncfusion.xamarin.core.17.1.0.38.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.GridCommon/17.1.0.38": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1JjK6/RqECqaiUKfuR9DprPBvgYrmDrYr9bmUxNRDI342UpL7Eo9vHUDOEDZC9AQJPpg3Ll9NI4/X7bIT30vgA==",
+      "path": "syncfusion.xamarin.gridcommon/17.1.0.38",
+      "hashPath": "syncfusion.xamarin.gridcommon.17.1.0.38.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfDataGrid/17.1.0.38": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p6JgH7Sob31ue/vLp7bo1pU7h6ujMlmgi4Vk+8dsgGoNezIgWAvxcYBAo0ZZlkicof7Dl0qAH8NzYnJq8tQyZQ==",
+      "path": "syncfusion.xamarin.sfdatagrid/17.1.0.38",
+      "hashPath": "syncfusion.xamarin.sfdatagrid.17.1.0.38.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfNumericTextBox/17.1.0.38": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3kb2EmHLSxec9+BKKOfjwuRlsXYTXbZiLMx6lJnuZugSgTcNsFZ0Fq3ycgwF+iizkkkvPuT2huQ/NWMHYsT2Yw==",
+      "path": "syncfusion.xamarin.sfnumerictextbox/17.1.0.38",
+      "hashPath": "syncfusion.xamarin.sfnumerictextbox.17.1.0.38.nupkg.sha512"
+    },
+    "Xamarin.Forms/3.6.0.264807": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T7gYS3PoGNtp6D7GAX7fF4QzR7NC36NNQSiuEb5TXO8rEqkZGwpC4u/6S62rH0wL3dabWNVpJPPnL5jZvWeoVg==",
+      "path": "xamarin.forms/3.6.0.264807",
+      "hashPath": "xamarin.forms.3.6.0.264807.nupkg.sha512"
+    },
+    "Xamarin.Forms.Plugin.HorizontalList/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kKqkMDBwkZs8plPwJkrLCvV6GAkIqpi+LtGGhR0gFCb4tMAQQeJzvF5JYHfKmAV+TJMZovx1/yo/Qoq7+nMM0A==",
+      "path": "xamarin.forms.plugin.horizontallist/1.0.2",
+      "hashPath": "xamarin.forms.plugin.horizontallist.1.0.2.nupkg.sha512"
+    },
+    "ZumeroDataGrid/1.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nHlereA4FcBCauFGRCKMCd49R5Ir8JneYdcTI4WJ3Bm+Q6cWCTqYAE/MOkbDu4AzpcyWp3+bKRBQJEvYXZlh1A==",
+      "path": "zumerodatagrid/1.1.3",
+      "hashPath": "zumerodatagrid.1.1.3.nupkg.sha512"
+    }
+  }
+}

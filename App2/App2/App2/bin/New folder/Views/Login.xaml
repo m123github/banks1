@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.Login"
+             BackgroundImage="background.png">
+
+   <!--<ContentPage.ToolbarItems>
+    <ToolbarItem Name="" Order="Primary" Icon="title_icon"  Priority="0"/>
+ --><!--</ContentPage.ToolbarItems>-->
+  <ContentPage.Content>
+    <StackLayout Padding="0">
+
+            <Image Source="{local:ImageResource App2.images.banklogonew123.png}" Margin="0,0,0,20" Aspect="Fill"  HeightRequest="210"/>  
+     
+    <StackLayout Spacing="1" Padding="20" HorizontalOptions="CenterAndExpand">
+        <!-- Place new controls here -->
+        <!-- <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" /> -->
+
+      <!-- <Image Source="title_icon.png">
+        
+      </Image>-->
+
+
+                <StackLayout >
+                    <StackLayout  WidthRequest="220">
+                        <Label Text="Bank ID" x:Name="lbl" />
+                        <Entry x:Name="BankId" Keyboard="Numeric" MaxLength="3"/>
+                    </StackLayout>
+                    <!--<StackLayout IsVisible="False">
+                        <Label Text="Branch ID"  />
+                        <Entry x:Name="BranchID" WidthRequest="100" IsEnabled="False"/>
+                    </StackLayout>-->
+                    <StackLayout>
+
+                        <Label Text="Customer ID" />
+                        <StackLayout Orientation="Horizontal" Spacing="0">
+
+
+                            <Entry x:Name="BranchID" WidthRequest="80" IsEnabled="False"/>
+                            <Entry x:Name="CustId" WidthRequest="200" Keyboard="Numeric" IsEnabled="False"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout  WidthRequest="220">
+                        <Label Text="PIN" />
+                        <Entry x:Name="Pin" Keyboard="Numeric" IsPassword="True" MaxLength="4" WidthRequest="220"/>
+
+                    </StackLayout>
+
+                </StackLayout>
+
+                <Grid HeightRequest="40" WidthRequest="120" Margin="0,30,0,0" HorizontalOptions="Center">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Button Text="Login"  x:Name="btnLogin" TextColor="white" BackgroundColor="#006db8"  Clicked="NavigateButton_OnClicked" CornerRadius="5"></Button>
+                            <!--<Button Text="Register" x:Name="btnRegister" TextColor="white" BackgroundColor="#006db8" Clicked="NavigateButton_OnClicked_register" CornerRadius="5" ></Button>-->
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+      </StackLayout>
+    
+  </ContentPage.Content>
+</ContentPage>

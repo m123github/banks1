@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.AddPayee"
+             BackgroundImage="background.png">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="MenuItem1" Order="Primary" Icon="home.png"  Priority="0" Clicked ="MenuItem1_Clicked"
+                     />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Margin="0,5,0,10"    BackgroundColor="#f8f7f7" HasShadow="True"  Padding="10">
+                <Label x:Name="bankname" Text="{Binding bankName}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" FontSize="12" TextColor="#E41C28" FontAttributes="Bold" Margin="10,5,10,0"/>
+            </Frame>
+        <StackLayout Margin="20,30,20,10" Spacing="4">
+            <Label Text="Payee Account Name" />
+            <Entry x:Name="txtPayeeAccountName"  IsEnabled="False"></Entry>
+            <Label Text="Account Type" />
+                <Picker Title="Select Account Type" x:Name="ddAccountType" SelectedIndexChanged="ddAccountType_SelectedIndexChanged"></Picker>
+            <Label Text="Account Number" />
+            <Entry x:Name="txtPayeeAccountNumber" Keyboard="Numeric"></Entry>
+            <Label Text="Confirm Account Number" />
+            <Entry x:Name="txtPayeeAccountNumberrReenter" Keyboard="Numeric" Unfocused="TxtPayeeAccountNumberrReenter_Unfocused"></Entry>
+            <Label Text="Payee Nick Name" />
+            <Entry x:Name="txtPayeeNickName" ></Entry>
+            <StackLayout Margin="70,30,70,10">
+                <Button Text="Proceed" Style="{StaticResource buttonStyle}" CornerRadius="5" HeightRequest="40"   Clicked="AddNewPayee" x:Name="Procced">
+                </Button>
+            </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

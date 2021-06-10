@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 x:Class="App2.PinVerification"
+                Title ="PinVerification" >
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation 
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8"
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"/>
+
+    </pages:PopupPage.Animation>
+    <ContentPage.Content>
+        <Frame   HasShadow="True"  BackgroundColor="White" CornerRadius="10" Margin =" 20,0,20,0" VerticalOptions="Center" HorizontalOptions="Center" Opacity ="80" OutlineColor="#919293" WidthRequest="250"  HeightRequest="150">
+
+
+            <StackLayout Padding="5">
+                <Label  x:Name="lbl"  TextColor ="Black" FontAttributes="Bold" HorizontalOptions="Center"  Text="Please Enter OTP"/>
+                <Entry Text="" x:Name="entry1"></Entry>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="15">
+                    <Button Text="Ok" BackgroundColor="#006db8" Clicked="Button_Clicked" TextColor="White"/>
+                    <Button Text="Cancel" BackgroundColor="#006db8" Clicked="Button_Clicked_1" TextColor="White"/>
+                </StackLayout>
+
+            </StackLayout>
+
+        </Frame>
+
+
+    </ContentPage.Content>
+</pages:PopupPage>

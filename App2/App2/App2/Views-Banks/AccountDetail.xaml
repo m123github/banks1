@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           
+              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 x:Class="App2.AccountDetail"
+                Title ="Additional Information" >
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation 
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8"
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"/>
+
+    </pages:PopupPage.Animation>
+    
+        <!--<Frame   HasShadow="True" CornerRadius="5"     BackgroundColor="#b3daff"   VerticalOptions="Center"  Opacity ="100"  WidthRequest="150" Padding="30,10,40,10">
+            
+
+               
+        
+           
+                <Label  x:Name="lbl" HorizontalOptions="CenterAndExpand" FontSize="12" FontFamily="Calibri" TextColor="Black" />
+
+              
+
+
+        </Frame>-->
+    <Frame   HasShadow="True" CornerRadius="5"     BackgroundColor="White"   VerticalOptions="Center"  Opacity ="100"  WidthRequest="250"    HeightRequest="150"    Padding="10,10,10,10" HorizontalOptions="Center" >
+        <ListView  x:Name="listView1"  HasUnevenRows="False"    >
+                <ListView.Header>
+                    <Grid x:Name="heading" BackgroundColor="#304ea3" Margin="0,2,0,2"  RowSpacing="10"  >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"  />
+                            <ColumnDefinition Width="5*" />
+
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Details" VerticalOptions="Center"  FontSize="13" VerticalTextAlignment="Center"
+                                             TextColor="#ffffff"  Grid.Column="0" HorizontalTextAlignment="Center"></Label>
+                        <Label Text="Values" VerticalOptions="Center"  FontSize="12"
+                                             TextColor="#ffffff" Grid.Column="1" HorizontalTextAlignment="Center"></Label>
+
+
+                    </Grid>
+                </ListView.Header>
+
+
+                <ListView.ItemTemplate >
+                    <DataTemplate>
+                        <ViewCell >
+                            <ViewCell.View >
+
+                                <Grid   RowSpacing="1.2" VerticalOptions="Center"  >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="4.97*"  />
+                                    <ColumnDefinition Width=".06*"  />
+                                    <ColumnDefinition Width="4.97*"  />
+                                        
+                                    </Grid.ColumnDefinitions>
+
+                          
+
+
+                                <Label Text="{Binding Path=Value}"    FontSize="11"
+                                             TextColor="Black"  Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                                <BoxView HeightRequest="4"  Grid.Column="1" BackgroundColor="#304ea3" HorizontalOptions="FillAndExpand" Margin="0,-80,0,0" ></BoxView>
+                                <Label Text="{Binding Path=Key}" VerticalOptions="Center" FontSize="11"   LineBreakMode="WordWrap"                                              
+                                             TextColor="Black"  Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+
+
+                            </Grid>
+
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </Frame>
+
+
+   
+</pages:PopupPage>

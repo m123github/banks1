@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.RemovePayee"
+             BackgroundImage="background.png">
+    <ContentView.Content>
+        <StackLayout>
+            <Frame Margin="0,5,0,10"    BackgroundColor="#f8f7f7" HasShadow="True"  Padding="10">
+                <Label x:Name="bankname" Text="{Binding bankName}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" FontSize="12" TextColor="#E41C28" FontAttributes="Bold" Margin="10,5,10,0"/>
+            </Frame>
+        <StackLayout Margin="20,0,20,0">
+            <Picker x:Name="RemoveAccount" HorizontalOptions="FillAndExpand" TextColor="Black" FontAttributes="None" FontSize="Medium" Title="Please select an Account" Style="{StaticResource profileLabelStyle}" SelectedItem="{Binding RemoveAccount}"  SelectedIndexChanged="RemoveAccount_SelectedIndexChanged"
+                    >
+            </Picker>
+            <StackLayout Margin="70,20,70,10">
+                <Button Text="Remove" Style="{StaticResource buttonStyle}" WidthRequest="80" HeightRequest="40" Margin="10,20,10,10"  Clicked="Button_Clicked"/>
+            </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentPage>

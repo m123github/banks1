@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.AccountTypes"
+             BackgroundImage="background.png">
+    <ContentPage.Content>
+        
+            <StackLayout>
+                <ListView x:Name="listView2" 
+			   RowHeight="50"
+			   HasUnevenRows="True"  >
+                <ListView.ItemTemplate Loaded="listView1_loaded" AlternationCount="2">
+                    <DataTemplate>
+                        <ViewCell>
+                <Frame Margin="10,15,10,2" OutlineColor="#8888"  BackgroundColor="White" HasShadow="True" IsVisible="False">
+
+                    <StackLayout>
+                        <StackLayout>
+                            <Label Text="Savings Bank Account" HorizontalOptions="Center" VerticalOptions="Start" TextColor="#999999"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" HeightRequest="50">
+
+                            <Image Source="bankaccnt.png"  WidthRequest="40"></Image>
+                            <StackLayout WidthRequest="120" Padding="10,5,0,0" >
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text = "Balance :" HorizontalOptions="Start" TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,5,0"/>
+                                    <Label Text = "25,000"  TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text = "No. of Transactions :" HorizontalOptions="Start"  TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,5,0"/>
+                                    <Label Text = "2"  TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                            <Label Text = "{Binding Chqno}" TextColor="Black" FontSize="12" WidthRequest="75" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text = "A/C No." TextColor="Red" FontSize="12" WidthRequest="70" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                                <Label Text = "1/8774"  TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,0,0,0"/>
+                            </StackLayout>
+
+                            <Image Source="arrow_blue_right.png"  WidthRequest="20"></Image>
+
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10,2,10,2" OutlineColor="#8888"  BackgroundColor="White"  HasShadow="True">
+                    <StackLayout>
+                        <StackLayout>
+                            <Label Text="Fixed Deposit" HorizontalOptions="Center" VerticalOptions="Start" TextColor="#999999"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" HeightRequest="50">
+
+                            <Image Source="fixedpst.png"  WidthRequest="40"></Image>
+                            <StackLayout WidthRequest="120" Padding="10,5,0,0" >
+                                <Label Text = "Balance" HorizontalOptions="Start" TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                                <Label Text = "No. of Transactions" HorizontalOptions="Start"  TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            </StackLayout>
+                            <Label Text = "{Binding Chqno}" TextColor="Black" FontSize="12" WidthRequest="75" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            <Label Text = "A/C No." TextColor="Red" FontSize="12" WidthRequest="120" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            <Image Source="arrow_blue_right.png"  WidthRequest="20"></Image>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10,2,10,2" OutlineColor="#8888"  BackgroundColor="White" HasShadow="True">
+                    <StackLayout>
+                        <StackLayout>
+                            <Label Text="Gold Loan" HorizontalOptions="Center" VerticalOptions="Start" TextColor="#999999"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" HeightRequest="50">
+
+                            <Image Source="GoldLoan.png"  WidthRequest="40"></Image>
+                            <StackLayout WidthRequest="120" Padding="10,5,0,0" >
+                                <Label Text = "Balance" HorizontalOptions="Start" TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                                <Label Text = "No. of Transactions" HorizontalOptions="Start"  TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            </StackLayout>
+                            <Label Text = "{Binding Chqno}" TextColor="Black" FontSize="12" WidthRequest="75" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            <Label Text = "A/C No." TextColor="Red" FontSize="12" WidthRequest="120" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            <Image Source="arrow_blue_right.png"  WidthRequest="20"></Image>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10,2,10,2" OutlineColor="#8888"  BackgroundColor="White" HasShadow="True">
+                    <StackLayout>
+                        <StackLayout>
+                            <Label Text="CSOL" HorizontalOptions="Center" VerticalOptions="Start" TextColor="#999999"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" HeightRequest="50">
+
+                            <Image Source="CSOL.png"  WidthRequest="40"></Image>
+                            <StackLayout WidthRequest="120" Padding="10,5,0,0" >
+                                <Label Text = "Balance" HorizontalOptions="Start" TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                                <Label Text = "No. of Transactions" HorizontalOptions="Start"  TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            </StackLayout>
+                            <Label Text = "{Binding Chqno}" TextColor="Black" FontSize="12" WidthRequest="75" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            <Label Text = "A/C No." TextColor="Red" FontSize="12" WidthRequest="120" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            <Image Source="arrow_blue_right.png"  WidthRequest="20"></Image>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame Margin="10,2,10,2" OutlineColor="#8888"  BackgroundColor="White" HasShadow="True">
+                    <StackLayout>
+                        <StackLayout>
+                            <Label Text="A Class Shares " HorizontalOptions="Center" VerticalOptions="Start" TextColor="#999999"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" HeightRequest="50">
+
+                            <Image Source="share.png"  WidthRequest="40"></Image>
+                            <StackLayout WidthRequest="120" Padding="10,5,0,0" >
+                                <Label Text = "Balance" HorizontalOptions="Start" TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                                <Label Text = "No. of Transactions" HorizontalOptions="Start"  TextColor="Black" FontSize="12"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            </StackLayout>
+                            <Label Text = "{Binding Chqno}" TextColor="Black" FontSize="12" WidthRequest="75" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            <Label Text = "A/C No." TextColor="Red" FontSize="12" WidthRequest="120" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="-5,0,-5,0"/>
+                            <Image Source="arrow_blue_right.png"  WidthRequest="20"></Image>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </StackLayout>
+        </ContentPage.Content>
+   
+</ContentPage>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Syncfusion ="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             x:Class="App2.PassbookView3"
+             BackgroundImage="background.png">
+    <ContentPage.Content>
+        <StackLayout >
+            <Frame Margin="0,5,0,10"    BackgroundColor="#f8f7f7" HasShadow="True"  Padding="10" >
+                <Label x:Name="bankname" Text="{Binding bankName}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" FontSize="12" TextColor="#E41C28" FontAttributes="Bold" Margin="10,5,10,0"/>
+            </Frame>
+
+
+
+            <StackLayout Orientation="Horizontal" Margin="30,0,0,10" >
+                <!--<Label Text="Transfer To" />-->
+
+
+                <Label Text="Account No:" />
+
+                <Picker x:Name="ActPicker"  Title="Please select an Account" FontAttributes="None" FontSize="12" Margin="10,-15,0,0" SelectedIndexChanged="ActPicker_SelectedIndexChanged" >
+                </Picker>
+
+            </StackLayout>
+
+            <Syncfusion:SfDataGrid x:Name="listView1" DefaultColumnWidth="120" AllowDraggingColumn="True" AllowSorting="True" VerticalOverScrollMode="Bounce" SelectionMode="Single">
+                
+                           
+                
+                
+                
+                
+                
+            </Syncfusion:SfDataGrid>
+            <!--<ScrollView BackgroundColor="White" Orientation="Both" HorizontalScrollBarVisibility="Always" VerticalScrollBarVisibility="Always">-->
+            <!--<StackLayout Margin="0,10,0,10" VerticalOptions="FillAndExpand">
+                <ListView  x:Name="listView1"  HasUnevenRows="False"  Margin="10,2,10,2"  VerticalOptions="FillAndExpand" >
+                    <ListView.Header >
+                        <Grid x:Name="heading" BackgroundColor="#304ea3" Margin="0,2,0,2"  RowSpacing="10"  IsVisible="False" >
+                           
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            --><!--<Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.9*"  />
+                                <ColumnDefinition Width="2.4*" />
+                                <ColumnDefinition Width="1.9*" />
+                                <ColumnDefinition Width="1.9*" />
+                                <ColumnDefinition Width="1.9*" />
+                            </Grid.ColumnDefinitions>-->
+                            <!--<Label Text="Date" VerticalOptions="Center"  FontSize="13" VerticalTextAlignment="Center"
+                                             TextColor="#ffffff"  Grid.Column="0" HorizontalTextAlignment="Start"></Label>
+                            <Label Text="Particulars" VerticalOptions="Center"  FontSize="12"
+                                             TextColor="#ffffff" Grid.Column="1" HorizontalTextAlignment="Start"></Label>
+                            <Label Text="Debit" VerticalOptions="Center"  FontSize="13"
+                                             TextColor="#ffffff"  Grid.Column="2" HorizontalTextAlignment="Start"></Label>
+                            <Label Text="Credit" VerticalOptions="Center"  FontSize="13"
+                                             TextColor="#ffffff"  Grid.Column="3" HorizontalTextAlignment="Start"></Label>
+                            <Label Text="Balance" VerticalOptions="Center" FontSize="13"
+                                             TextColor="#ffffff"  Grid.Column="4" HorizontalTextAlignment="Start"></Label>--><!--
+                        </Grid>
+                    </ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Grid BackgroundColor="{Binding RowColor}" Margin="0,2,0,2"  RowSpacing="13" VerticalOptions="FillAndExpand" x:Name="resultgrid">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1.8*"  />
+                                            <ColumnDefinition Width="2.8*" />
+                                            <ColumnDefinition Width="1.8*" />
+                                            <ColumnDefinition Width="1.8*" />
+                                            <ColumnDefinition Width="1.8*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text = "{Binding Date}"    FontSize="11"
+                                             TextColor="Black"  Grid.Column="0" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                                        <ScrollView Orientation="Horizontal" Grid.Column="1" HorizontalScrollBarVisibility="Never">
+                                            <Label Text="{Binding Particulars}" VerticalOptions="Center" FontSize="11"   LineBreakMode="WordWrap"                                              
+                                             TextColor="Black"  Grid.Column="1" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                                        </ScrollView>
+
+                                        <Label Text="{Binding Payment}" VerticalOptions="Center" FontSize="11"
+                                             TextColor="Black"  Grid.Column="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+
+                                        <Label Text="{Binding Receipt}" VerticalOptions="Center" FontSize="11"
+                                             TextColor="Black"  Grid.Column="3" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+
+                                        <Label Text="{Binding Balance}" VerticalOptions="Center" FontSize="11"
+                                             TextColor="Black"  Grid.Column="4" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                                    </Grid>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>-->
+            <!--</ScrollView>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
